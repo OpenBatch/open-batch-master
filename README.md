@@ -1,11 +1,30 @@
-# open-batch-master
-The master that manages all the open-batch peers
+# lifecycle-quickstart project
 
-Do you have a super-powerful laptop but today you are just chilling around with Exel and PPT? You start taking money back today, using open-batch. 
+This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
-Open-batch is *really* in the domain of the public cloud, meaning that you can host the open-batch-peer (a simple VM that will communicate with `open-batch-master`, the headquarter of the public cloud) and whenever somebody requests cores to run his jobs, you can be one of them to provide the power he needs. The more you offer, the more you get. 
+If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
-The overall view is the following 
+## Running the application in dev mode
 
-![open-batch](https://user-images.githubusercontent.com/18282531/76355281-4c5ed300-6314-11ea-9661-4e8674d29736.png)
+You can run your application in dev mode that enables live coding using:
+```
+./mvnw quarkus:dev
+```
 
+## Packaging and running the application
+
+The application is packageable using `./mvnw package`.
+It produces the executable `lifecycle-quickstart-1.0-SNAPSHOT-runner.jar` file in `/target` directory.
+Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/lib` directory.
+
+The application is now runnable using `java -jar target/lifecycle-quickstart-1.0-SNAPSHOT-runner.jar`.
+
+## Creating a native executable
+
+You can create a native executable using: `./mvnw package -Pnative`.
+
+Or you can use Docker to build the native executable using: `./mvnw package -Pnative -Dquarkus.native.container-build=true`.
+
+You can then execute your binary: `./target/lifecycle-quickstart-1.0-SNAPSHOT-runner`
+
+If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image-guide .
