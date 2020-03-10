@@ -1,1 +1,4 @@
+org/openbatch/master/storage/IStorage.class
+org/openbatch/master/storage/ElasticSearchStorage.class
+org/openbatch/master/storage/InMemoryStorage.class
 org/openbatch/master/MonitorResource.class

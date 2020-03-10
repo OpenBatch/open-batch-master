@@ -1,1 +1,4 @@
-/home/jrota/OpenBatch/lifecycle-quickstart/src/main/java/org/openbatch/master/MonitorResource.java
+/home/jrota/OpenBatch/open-batch-master/src/main/java/org/openbatch/master/storage/IStorage.java
+/home/jrota/OpenBatch/open-batch-master/src/main/java/org/openbatch/master/MonitorResource.java
+/home/jrota/OpenBatch/open-batch-master/src/main/java/org/openbatch/master/storage/ElasticSearchStorage.java
+/home/jrota/OpenBatch/open-batch-master/src/main/java/org/openbatch/master/storage/InMemoryStorage.java
